@@ -1,0 +1,165 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Face</string>
+
+    <string name="hint_move_into_frame">Move your face into the box.</string>
+    <string name="hint_come_closer">A little closer.</string>
+    <string name="hint_move_further">Please stay away.</string>
+    <string name="hint_head_higher">Head up</string>
+    <string name="hint_head_down">A little lower head</string>
+    <string name="hint_turn_left">Turn to the left</string>
+    <string name="hint_turn_right">Turn to the right</string>
+
+    <string name="hint_move_left">Move to the left</string>
+    <string name="hint_move_up">Move upwards</string>
+    <string name="hint_move_right">Move to the right</string>
+    <string name="hint_move_down">Move to the down</string>
+
+    <string name="hint_occlusion_in_left_eye">The left eye is covered.</string>
+    <string name="hint_occlusion_in_right_eye">The right eye is covered.</string>
+    <string name="hint_occlusion_in_nose">The nose is covered.</string>
+    <string name="hint_occlusion_in_mouth">The mouth is covered.</string>
+    <string name="hint_occlusion_in_left_cheek">The left cheek is covered.</string>
+    <string name="hint_occlusion_in_right_cheek">The right cheek is covered.</string>
+    <string name="hint_occlusion_in_chin">The mandible is covered.</string>
+    <string name="hint_occlusion_in_face">The face is covered.</string>
+
+    <string name="hint_light_low">The light is brighter.</string>
+    <string name="hint_keep_still">Please keep still.</string>
+    <string name="hint_timeout">Detection timeout</string>
+    <string name="hint_success">Verification success</string>
+    <string name="hint_very_good">Very good</string>
+
+    <string name="title_USB">Face recognition system</string>
+    <string name="title_USB_en">Face recognition system</string>
+
+    <string name="title_usb_Reg">RGB Camera registration</string>
+    <string name="oneCamera_no_liveness">RGB Camera - no liveness detection</string>
+    <string name="oneCamera_no_liveness_descrition">Living body detection is mainly used to judge whether the user is released as a real person, but in the use of scenarios, there are often fixed guards, you can not live, directly collect face. Although live detection ensures safety, it can affect a certain pass rate.</string>
+    <string name="oneCamera_liveness">RGB Camera - liveness detection</string>
+    <string name="oneCamera_liveness_describe">RGB Living (Monocular Living) can be used only, and can be effectively placed in photos, screen attacks, front-end acquisition can be USB monocular camera can be used.</string>
+
+    <string name="title_Ir">IrCamera</string>
+    <string name="ir_liveness_score">IR score：<xliff:g id="prefix_1">%1$s</xliff:g></string>
+    <string name="ir_liveness_duration">IR duration：<xliff:g id="prefix_2">%1$s</xliff:g></string>
+    <string name="twoCamera_liveness">Ir Camera - liveness detection</string>
+    <string name="twoCamera_liveness_describe">RGB + IR liveness, based on the security level of RGB liveness, is more defensive to screen, high-definition print photos, video, tacit understanding and so on.</string>
+    <string name="rgb_detectduration">RGB detect：<xliff:g id="prefix_3">%1$s</xliff:g></string>
+    <string name="rgb_liveness_score">RGB score：<xliff:g id="prefix_4">%1$s</xliff:g></string>
+    <string name="rgb_liveness_duration">RGB duration：<xliff:g id="prefix_5">%1$s</xliff:g></string>
+    <string name="depth_liveness_score">Depth score：<xliff:g id="prefix_6">%1$s</xliff:g></string>
+    <string name="depth_liveness_duration">Depth duration：<xliff:g id="prefix_7">%1$s</xliff:g></string>
+    <string name="orbbec_liveness">Orbbec Camera - liveness detection</string>
+    <string name="orbbec_liveness_describe">RGB + Depth liveness, based on the security level of RGB liveness, is more defensive to screen, HD print photos, video, tacit understanding and so on.</string>
+
+    <string name="feature_livess">Life lighting model</string>
+    <string name="feature_id_photo">Certificate photo model</string>
+    <string name="feature_livess_describe">Typical scenes using this model: life photos, mobile phone pictures, real-time camera pictures and so on.</string>
+    <string name="feature_id_photo_describe">Note: Once a model is selected, this model is used for feature extraction of all business processes, and the two models do not work simultaneously. In case of feature extraction in the design of the business license, please select the certificate photo model.</string>
+    <string name="feature_id_photo_note">Note: Face recognition under the certificate photo model may be inefficient, and is still in the testing stage. We will update the algorithm later.</string>
+
+    <string name="detect_no_face">No face was detected.</string>
+    <string name="still_view_screen">Please still view the screen flat.</string>
+    <string name="light_too_dark">The light is too dim.
+        Please go to a brighter place.</string>
+    <string name="face_too_low">Face confidence is too low.</string>
+    <string name="face_angle_too_large">Face angle is too large.
+        Please face the screen.</string>
+    <string name="face_too_close">The face is too close to the screen.
+        Please adjust the distance from the screen.</string>
+    <string name="face_too_far">The face is too far away from the screen.
+        Please adjust the distance from the screen.</string>
+    <string name="face_too_right">Face is too close to the right in the screen.</string>
+    <string name="face_too_left">Face is too close to the left in the screen.</string>
+    <string name="face_too_down">Face is too close to the screen.</string>
+    <string name="face_too_up">Face is too close to the screen.</string>
+
+    <string name="versionCode">Version：</string>
+
+    <string name="btn_picture_allSelect">All</string>
+    <string name="btn_picture_empty">There are no registered images in the system.</string>
+    <string name="btn_picture_register">Regist</string>
+    <string name="btn_picture_cancel">Cancel</string>
+    <string name="register_alertdialog_2">有<xliff:g id="pictureNum_2">%1$s</xliff:g>张图片解码出错;</string>
+    <string name="register_alertdialog_3">有<xliff:g id="pictureNum_3">%1$s</xliff:g>张图片无法检测到人脸;</string>
+    <string name="picture_success">Picture registration is successful.</string>
+    <string name="picture_registing">The picture is being registered.</string>
+    <string name="dialog_title">Are you sure you want to
+        delete the face from the face library?</string>
+    <string name="activate">Activation</string>
+    <string name="activate_code">Activation code：</string>
+    <string name="device_code">Device code：</string>
+    <string name="activate_text">Activation</string>
+    <string name="about_title">About</string>
+    <string name="version_introduce">Version description</string>
+    <string name="contact">Contact information</string>
+    <string name="service_firefly">Technical：service@t-firefly.com</string>
+    <string name="sales_firefly">Contacts：sales@t-firefly.com</string>
+    <string name="contact_firefly">Hotline：4001-511-533</string>
+    <string name="settings_picRegTitle">Register</string>
+    <string name="setting_DB_title">Database</string>
+    <string name="setting_model_title">Models</string>
+    <string name="setting_feature_title">Feature model</string>
+    <string name="setting_activate_title">Activation</string>
+    <string name="setting_about_title">About</string>
+    <string name="empty_text">Face not registered</string>
+    <string name="find_no_pic">No pictures found.</string>
+    <string name="allSelected">All</string>
+    <string name="allCancel">Cancel</string>
+    <string name="startReg">Regist</string>
+    <string name="picRegDialog_title">Picture registration</string>
+    <string name="ok">OK</string>
+    <string name="et_hide_text">enter one user name</string>
+    <string name="modify_dialog_failture">Failed to change user name</string>
+    <string name="modify_dialog_title">Modify user name</string>
+    <string name="cameraReg_dialog_title">Camera registration</string>
+    <string name="reg_ok">Register</string>
+    <string name="reg_cancel">Cancel</string>
+    <string name="camera_dialog_minfacesize">The face is too small (must be hit at the minimum detection face minFaceSize), or the face angle is too large, the face is not facing up.</string>
+    <string name="save_bitmap_failture">Save face registration pictures failed</string>
+    <string name="decimation_failture">Extract feature failure</string>
+    <string name="reg_failture">login has failed</string>
+    <string name="reg_success">login was successful</string>
+
+    <string name="version_code">Face recognition system V<xliff:g id="prefix">%1$s</xliff:g></string>
+
+    <string name="regPic_tip_registering">Total： <xliff:g id="prefix">%1$s</xliff:g>, completed： <xliff:g id="prefix">%2$s</xliff:g>
+\n Success： <xliff:g id="prefix">%3$s</xliff:g>, failed： <xliff:g id="prefix">%4$s</xliff:g></string>
+
+    <string name="regPic_tip_success">Picture registration completed</string>
+    <string name="regPic_tip_failture">Image registration failed</string>
+    <string name="please_activate">Please activate the device.</string>
+    <string name="user_name">UserName</string>
+    <string name="key_empty">The serial number can not be empty.</string>
+    <string name="activate_success">Activating success</string>
+    <string name="activate_failture">Activation failure</string>
+    <string name="et_hide">Input serial number</string>
+    <string name="deleteUserTitle">Delete</string>
+    <string name="activate_et_hide">Input serial number</string>
+    <string name="record_time">Punch time</string>
+    <string name="delete_user_tip">Confirm delete all user data under this user.</string>
+    <string name="modify_user_success">Modify user name successfully</string>
+    <string name="modify_user_failture">Failed to change user name</string>
+    <string name="delete_user_success">Delete</string>
+    <string name="user_id">UserID：</string>
+    <string name="student_id">StudentID：</string>
+    <string name="db_user_name">UserName：</string>
+    <string name="db_user_regist_time">Registration time：</string>
+    <string name="user_number">UserNumber:</string>
+    <string name="Please_face_screen">Please face the screen.</string>
+    <string name="user_no_register">Unregistered</string>
+    <string name="user_face_registered">Face has been registered.</string>
+
+    <string name="found_no_camera">There are no 2 cameras in the device.</string>
+
+
+    <string name="update_introduce">1.Updated the Settings UI interface.  \n  2.Added the face attribute judgment, is still in the testing stage, is not very accurate, we will update the algorithm later.
+  \n  3.Optimize Ircamera camera and depth camera live score algorithm.</string>
+
+    <string name="add_user">Add</string>
+    <string name="recorder">Record：</string>
+    <string name="Face_Manager">人脸管理</string>
+    <string name="Parameter_Settings">参数设置</string>
+    <string name="View_Results">签到结果</string>
+    <string name="Historical_Record">历史记录</string>
+
+</resources>

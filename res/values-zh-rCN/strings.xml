@@ -1,0 +1,154 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">人脸</string>
+
+    <string name="hint_move_into_frame">把脸移入框内</string>
+    <string name="hint_come_closer">再靠近一点儿</string>
+    <string name="hint_move_further">请离远一点儿</string>
+    <string name="hint_head_higher">头抬高些</string>
+    <string name="hint_head_down">头低一点</string>
+    <string name="hint_turn_left">向左转转</string>
+    <string name="hint_turn_right">向右转转</string>
+
+    <string name="hint_move_left">向左移动</string>
+    <string name="hint_move_up">向上移动</string>
+    <string name="hint_move_right">向右移动</string>
+    <string name="hint_move_down">向下移动</string>
+
+    <string name="hint_occlusion_in_left_eye">左眼有遮挡</string>
+    <string name="hint_occlusion_in_right_eye">右眼有遮挡</string>
+    <string name="hint_occlusion_in_nose">鼻子有遮挡</string>
+    <string name="hint_occlusion_in_mouth">嘴巴有遮挡</string>
+    <string name="hint_occlusion_in_left_cheek">左侧脸颊有遮挡</string>
+    <string name="hint_occlusion_in_right_cheek">右侧脸颊有遮挡</string>
+    <string name="hint_occlusion_in_chin">下颚有遮挡</string>
+    <string name="hint_occlusion_in_face">脸部有遮挡</string>
+
+    <string name="hint_light_low">光线再亮些</string>
+    <string name="hint_keep_still">请保持不动</string>
+    <string name="hint_timeout">检测超时</string>
+    <string name="hint_success">验证成功</string>
+    <string name="hint_very_good">非常好</string>
+
+    <string name="title_USB">人脸识别系统</string>
+    <string name="title_USB_en">Face recognition system</string>
+
+    <string name="title_usb_Reg">单目摄像头注册</string>
+    <string name="oneCamera_no_liveness">单目摄像头－无活体检测</string>
+    <string name="oneCamera_no_liveness_descrition">活体检测主要用于判断用户释放为真人，但如使用场景下，常有固定人员看守，则可无需活体，直接采集人脸。因为活体检测虽然保障了安全性，但却会影响一定的通过率</string>
+    <string name="oneCamera_liveness">单目摄像头－活体检测</string>
+    <string name="oneCamera_liveness_describe">仅使用RGB活体(单目活体)，可以有效防止照片翻拍，屏幕等攻击，前端采集可为USB单目摄像头即可</string>
+
+    <string name="title_Ir">Ir双目摄像头</string>
+    <string name="ir_liveness_score">IR活体得分：<xliff:g id="prefix_1">%1$s</xliff:g></string>
+    <string name="ir_liveness_duration">IR活体耗时：<xliff:g id="prefix_2">%1$s</xliff:g></string>
+    <string name="twoCamera_liveness">双目摄像头－活体检测</string>
+    <string name="twoCamera_liveness_describe">RGB+IR活体，在RGB活体的安全级别基础上，对屏幕、高清打印照片、视频、默契等防御力更强。</string>
+    <string name="rgb_detectduration">人脸检测耗时：<xliff:g id="prefix_3">%1$s</xliff:g></string>
+    <string name="rgb_liveness_score">RGB活体得分：<xliff:g id="prefix_4">%1$s</xliff:g></string>
+    <string name="rgb_liveness_duration">RGB活体耗时：<xliff:g id="prefix_5">%1$s</xliff:g></string>
+    <string name="depth_liveness_score">Depth活体得分：<xliff:g id="prefix_6">%1$s</xliff:g></string>
+    <string name="depth_liveness_duration">Depth活体耗时：<xliff:g id="prefix_7">%1$s</xliff:g></string>
+    <string name="orbbec_liveness">结构光摄像头－活体检测</string>
+    <string name="orbbec_liveness_describe">RGB+Depth活体，在RGB活体的安全级别基础上，对屏幕、高清打印照片、视频、默契等防御力更强。</string>
+    <string name="feature_livess">生活照模型</string>
+    <string name="feature_id_photo">证件照模型</string>
+    <string name="feature_livess_describe">使用此模型的典型场景：生活照图片，手机拍摄图片，镜头实时采集的图片等。</string>
+    <string name="feature_id_photo_describe">注意：一经选择一个模型，则所有业务流程的特征抽取处理，都会使用此模型，两个模型不可同时作用。如业务中设计证件照的特征抽取，请务必选择证件照模型。</string>
+    <string name="feature_id_photo_note">注意：在证件照模型下进行人脸识别效率可能很低，目前还在测试阶段，我们会后续更新算法</string>
+
+    <string name="detect_no_face">未检测到人脸</string>
+    <string name="still_view_screen">请静止平视屏幕</string>
+    <string name="light_too_dark">光线太暗，请到更明亮的地方</string>
+    <string name="face_too_low">人脸置信度太低</string>
+    <string name="face_angle_too_large">人脸置角度太大，请正对屏幕</string>
+    <string name="face_too_close">人脸离屏幕太近，请调整与屏幕的距离</string>
+    <string name="face_too_far">人脸离屏幕太远，请调整与屏幕的距离</string>
+    <string name="face_too_right">人脸在屏幕中太靠右</string>
+    <string name="face_too_left">人脸在屏幕中太靠左</string>
+    <string name="face_too_down">人脸在屏幕中太靠下</string>
+    <string name="face_too_up">人脸在屏幕中太靠上</string>
+
+    <string name="versionCode">版本:</string>
+
+    <string name="btn_picture_allSelect">全选</string>
+    <string name="btn_picture_empty">没有可注册的图片在系统中...</string>
+    <string name="btn_picture_register">开始注册</string>
+    <string name="btn_picture_cancel">取消</string>
+    <string name="register_alertdialog_2">有<xliff:g id="pictureNum_2">%1$s</xliff:g>张图片解码出错;</string>
+    <string name="register_alertdialog_3">有<xliff:g id="pictureNum_3">%1$s</xliff:g>张图片无法检测到人脸;</string>
+    <string name="picture_success">图片注册成功</string>
+    <string name="picture_registing">图片正在注册中...</string>
+    <string name="dialog_title">你确定要从人脸库中删除该人脸吗?</string>
+    <string name="activate">设备激活</string>
+    <string name="activate_code">激活码：</string>
+    <string name="device_code">设备码：</string>
+    <string name="activate_text">激活</string>
+    <string name="about_title">关于软件</string>
+    <string name="version_introduce">版本说明</string>
+    <string name="contact">联系方式</string>
+    <string name="service_firefly">技术支持：service@t-firefly.com</string>
+    <string name="sales_firefly">业务联系：sales@t-firefly.com</string>
+    <string name="contact_firefly">服务热线：4001-511-533</string>
+    <string name="settings_picRegTitle">人脸图注册</string>
+    <string name="setting_DB_title">人脸数据库</string>
+    <string name="setting_model_title">模式设置</string>
+    <string name="setting_feature_title">特征模型设置</string>
+    <string name="setting_activate_title">设备激活</string>
+    <string name="setting_about_title">关于设备</string>
+    <string name="empty_text">人脸库为空</string>
+    <string name="find_no_pic">无法获取设备图片或设备中没有图片</string>
+    <string name="allSelected">全选</string>
+    <string name="allCancel">取消</string>
+    <string name="startReg">开始注册</string>
+    <string name="picRegDialog_title">图片注册</string>
+    <string name="ok">确定</string>
+    <string name="et_hide_text">输入用户名</string>
+    <string name="modify_dialog_failture">修改用户信息失败</string>
+    <string name="modify_dialog_title">确定要修改人脸信息吗？</string>
+    <string name="cameraReg_dialog_title">摄像头注册</string>
+    <string name="reg_ok">注      册</string>
+    <string name="reg_cancel">取      消</string>
+    <string name="camera_dialog_minfacesize">人脸太小（必须打于最小检测人脸minFaceSize），或者人脸角度太大，人脸不是朝上</string>
+    <string name="save_bitmap_failture">保存人脸注册图片失败</string>
+    <string name="decimation_failture">抽取特征失败</string>
+    <string name="reg_failture">注册失败</string>
+    <string name="reg_success">注册成功</string>
+
+    <string name="version_code">人脸识别系统v<xliff:g id="prefix">%1$s</xliff:g></string>
+
+    <string name="regPic_tip_registering">总人脸数: <xliff:g id="prefix">%1$s</xliff:g>, 完成: <xliff:g id="prefix">%2$s</xliff:g>
+成功: <xliff:g id="prefix">%3$s</xliff:g>, 失败: <xliff:g id="prefix">%4$s</xliff:g></string>
+
+    <string name="regPic_tip_success">图片注册完成</string>
+    <string name="regPic_tip_failture">图片注册失败</string>
+    <string name="please_activate">请激活设备</string>
+    <string name="user_name">用户名</string>
+    <string name="key_empty">序列号不能为空</string>
+    <string name="activate_success">激活成功</string>
+    <string name="activate_failture">激活失败</string>
+    <string name="et_hide">输入序列号</string>
+    <string name="deleteUserTitle">删除用户</string>
+    <string name="activate_et_hide">输入序列号</string>
+    <string name="record_time">打卡时间</string>
+    <string name="delete_user_tip">确认删除选中用户下所有的用户数据？</string>
+    <string name="modify_user_success">修改用户信息成功</string>
+    <string name="modify_user_failture">修改用户信息失败</string>
+    <string name="delete_user_success">删除成功</string>
+    <string name="user_id">用户ID：</string>
+    <string name="student_id">学号：</string>
+    <string name="db_user_name">姓名：</string>
+    <string name="db_user_regist_time">注册时间：</string>
+    <string name="user_number">编号：</string>
+    <string name="Please_face_screen">请正视屏幕</string>
+    <string name="user_no_register">未注册用户</string>
+    <string name="user_face_registered">人脸已注册过了</string>
+
+    <string name="found_no_camera">未检测到2个摄像头</string>
+
+
+    <string name="update_introduce">1.更新了设置UI界面。  \n  2.添加了人脸属性判断，目前还在测试阶段，不是很准确，我们会后续更新算法。  \n  3.优化Ircamera和depth活体得分算法。</string>
+
+    <string name="add_user">添加用户</string>
+    <string name="recorder">打卡记录:</string>
+
+</resources>

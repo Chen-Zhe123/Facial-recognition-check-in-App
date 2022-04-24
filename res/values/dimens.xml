@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="canvas_bitmap_w">58px</dimen>
+    <dimen name="canvas_bitmap_h">58px</dimen>
+    <dimen name="save_bitmap_h">112px</dimen>
+    <dimen name="save_bitmap_w">112px</dimen>
+    <dimen name="picreg_tipDialog_w">427px</dimen>
+    <dimen name="picreg_tipDialog_h">246px</dimen>
+</resources>

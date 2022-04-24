@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="请输入姓名或学号以查询人脸信息"/>
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cancel"
+                android:id="@+id/clean_EditText"
+                android:layout_gravity="right|center_vertical"
+                android:paddingBottom="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/search"
+            android:layout_marginEnd="18dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

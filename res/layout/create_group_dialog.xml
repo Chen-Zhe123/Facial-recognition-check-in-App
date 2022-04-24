@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="175dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写以下内容以创建新组"
+            android:textSize="15sp"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/init_group_name_title"
+                android:text="组名:"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/init_group_name_edit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/init_group_name_title"
+                android:hint="请输入组名"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/init_group_description_title"
+                android:text="组描述:"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/init_group_description_edit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/init_group_description_title"
+                android:hint="请输入组描述"
+                android:textSize="12sp"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/ensure_create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_weight="1"
+                android:padding="5dp"/>
+            <Button
+                android:id="@+id/cancel_create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_weight="1"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

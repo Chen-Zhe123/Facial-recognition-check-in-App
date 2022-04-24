@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/result_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sign_face_image"
+                android:src="@drawable/avatar"
+                android:layout_height="50dp"
+                android:layout_width="50dp"/>
+
+            <TextView
+                android:id="@+id/sign_student_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sign_face_image"
+                android:text="姓名: 陈喆    学号:20203177230110"
+                android:layout_toEndOf="@+id/sign_face_image" />
+
+            <TextView
+                android:id="@+id/sign_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sign_face_image"
+                android:layout_below="@+id/sign_student_name_id"
+                android:text="打卡时间:/未打卡 " />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态： "/>
+            <TextView
+                android:id="@+id/sign_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

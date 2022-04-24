@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#cccccc"
+        android:textSize="21px"
+        android:gravity="center_vertical"
+        android:text="@string/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <ImageView
+        android:background="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="160px"
+        android:layout_height="160px"/>
+
+    <TextView
+        android:id="@+id/versionCodeTv"
+        android:layout_width="wrap_content"
+        android:textSize="22px"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#e0e0e0"
+        android:text="@string/version_code"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="16px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="4px"
+            android:layout_marginRight="6px"
+            android:layout_height="20px"
+            android:background="#0099cc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="18px"
+            android:text="@string/version_introduce"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="100px"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#999999"
+        android:textSize="16px"
+        android:layout_marginTop="16px"
+        android:text="@string/update_introduce"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="16px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="4px"
+            android:layout_marginRight="6px"
+            android:layout_height="20px"
+            android:background="#0099cc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="18px"
+            android:text="@string/contact"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="100px"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#999999"
+        android:layout_marginTop="16px"
+        android:textSize="16px"
+        android:text="@string/service_firefly"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#999999"
+        android:textSize="16px"
+        android:text="@string/sales_firefly"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#999999"
+        android:textSize="16px"
+        android:text="@string/contact_firefly"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

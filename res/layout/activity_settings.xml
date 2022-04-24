@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#262a33"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#1a1a20"
+        android:orientation="vertical"
+        android:layout_width="220px"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/settings_item_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/callback_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+
+            <ImageView
+                android:src="@drawable/back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/settings_item_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/imageReg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+            <ImageView
+                android:src="@drawable/add_icon"
+                android:layout_marginRight="10px"
+                android:layout_marginLeft="40px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20px"
+                android:textColor="#999999"
+                android:text="@string/settings_picRegTitle"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/settings_item_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/db_picture_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+            <ImageView
+                android:layout_marginLeft="40px"
+                android:src="@drawable/db_image"
+                android:layout_marginRight="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20px"
+                android:textColor="#999999"
+                android:text="@string/setting_DB_title"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/settings_item_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/liveness_setting_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+            <ImageView
+                android:layout_marginLeft="40px"
+                android:src="@drawable/device_model"
+                android:layout_marginRight="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20px"
+                android:textColor="#999999"
+                android:text="@string/setting_model_title"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/settings_item_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/feature_setting_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+
+            <ImageView
+                android:layout_marginLeft="40px"
+                android:src="@drawable/feature_model"
+                android:layout_marginRight="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20px"
+                android:textColor="#999999"
+                android:text="@string/setting_feature_title"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/settings_item_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/device_activate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+            <ImageView
+                android:layout_marginLeft="40px"
+                android:src="@drawable/device_activate"
+                android:layout_marginRight="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20px"
+                android:textColor="#999999"
+                android:text="@string/setting_activate_title"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/settings_item_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/device_about_btn"
+            android:layout_width="match_parent"
+            android:layout_height="92px">
+            <ImageView
+                android:layout_marginLeft="40px"
+                android:src="@drawable/device_about"
+                android:layout_marginRight="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20px"
+                android:textColor="#999999"
+                android:text="@string/setting_about_title"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/allSelected"
+            android:layout_width="140px"
+            android:textSize="18px"
+            android:textColor="@drawable/textcolor"
+            android:layout_marginTop="30px"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:text="@string/allSelected"
+            android:background="@drawable/reg_btn_bg"
+            android:layout_height="40px"/>
+        <TextView
+            android:layout_width="140px"
+            android:textSize="18px"
+            android:id="@+id/allCancel"
+            android:textColor="@drawable/textcolor"
+            android:layout_marginTop="20px"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:text="@string/allCancel"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/reg_btn_bg"
+            android:layout_height="40px"/>
+        <TextView
+            android:layout_width="140px"
+            android:textSize="18px"
+            android:id="@+id/startReg"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:text="@string/startReg"
+            android:textColor="@drawable/textcolor"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20px"
+            android:background="@drawable/reg_btn_bg"
+            android:layout_height="40px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/zzz_regpic" android:id="@+id/regpic" android:visibility="gone"/>
+        <include layout="@layout/zzz_scanndbpic" android:id="@+id/scanndbpic" android:visibility="gone"/>
+        <include layout="@layout/model_settings" android:id="@+id/model_settings" />
+        <include layout="@layout/feature_model_settings" android:id="@+id/feature_model_settings" />
+        <include layout="@layout/activate" android:id="@+id/activate" android:visibility="gone"/>
+        <include layout="@layout/about" android:id="@+id/about" android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

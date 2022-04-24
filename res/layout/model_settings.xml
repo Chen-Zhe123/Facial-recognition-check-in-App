@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#cccccc"
+        android:textSize="21px"
+        android:gravity="center_vertical"
+        android:text="@string/setting_model_title"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <RelativeLayout
+        android:id="@+id/oneCamera_no_livenessLayout"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="140px">
+
+        <TextView
+            android:id="@+id/onecamera_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22px"
+            android:text="@string/oneCamera_no_liveness"
+            android:textColor="#1199cc"
+            android:textSize="19px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:layout_below="@+id/onecamera_title_1"
+            android:layout_marginRight="80px"
+            android:text="@string/oneCamera_no_liveness_descrition"
+            android:textColor="#cccccc"
+            android:textSize="14px"/>
+
+        <RadioButton
+            android:id="@+id/no_liveness_rb"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/radio_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6px"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/oneCamera_livenessLayout"
+        android:clickable="true"
+        android:layout_height="140px">
+
+        <TextView
+            android:id="@+id/onecamera_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22px"
+            android:text="@string/oneCamera_liveness"
+            android:textColor="#1199cc"
+            android:textSize="19px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:layout_below="@+id/onecamera_title_2"
+            android:layout_marginRight="80px"
+            android:text="@string/oneCamera_liveness_describe"
+            android:textColor="#cccccc"
+            android:textSize="14px"/>
+
+        <RadioButton
+            android:id="@+id/rgb_liveness_rb"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/radio_bg"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginRight="6px"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <RelativeLayout
+        android:id="@+id/TwoCamera_livenessLayout"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="140px">
+
+        <TextView
+            android:id="@+id/twocamera_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22px"
+            android:text="@string/twoCamera_liveness"
+            android:textColor="#1199cc"
+            android:textSize="19px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:layout_below="@+id/twocamera_title"
+            android:layout_marginRight="80px"
+            android:text="@string/twoCamera_liveness_describe"
+            android:textColor="#cccccc"
+            android:textSize="14px"/>
+
+        <RadioButton
+            android:id="@+id/rgb_ir_liveness_rb"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/radio_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6px"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/orbbec_livenessLayout"
+        android:clickable="true"
+        android:layout_height="140px">
+
+        <TextView
+            android:id="@+id/orbbeccamera_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22px"
+            android:text="@string/orbbec_liveness"
+            android:textColor="#1199cc"
+            android:textSize="19px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:layout_below="@+id/orbbeccamera_title"
+            android:layout_marginRight="80px"
+            android:text="@string/orbbec_liveness_describe"
+            android:textColor="#cccccc"
+            android:textSize="14px"/>
+
+        <RadioButton
+            android:id="@+id/rgb_depth_liveness_rb"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/radio_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6px"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+
+</LinearLayout>

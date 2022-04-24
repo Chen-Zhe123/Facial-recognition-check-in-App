@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E1D3D3"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="1px"
+        android:layout_weight="1">
+
+        <com.baidu.aip.face.TexturePreviewView
+            android:id="@+id/preview_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextureView
+            android:id="@+id/texture_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="60dp"
+            android:background="#81C0D3">
+
+            <ImageView
+                android:id="@+id/back_from_camera_reg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back1"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/register"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/adduser_bg"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/add_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/add_user"
+                    android:textColor="#f0f0f0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/dialog_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="组名"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/dismiss"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cancel"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dialog_group_name">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/group_face_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/group_empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="该组为空，请点击下方按钮往组中添加人脸"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dialog_group_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"/>
+        <ImageView
+            android:id="@+id/add_face"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add_group"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

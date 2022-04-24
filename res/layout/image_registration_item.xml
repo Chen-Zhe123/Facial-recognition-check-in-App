@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="122px"
+        android:layout_gravity="center"
+        android:layout_height="122px">
+
+        <ImageView
+            android:id="@+id/pic_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/checkBox"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:src="@drawable/pic_selected"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="122px"
+        android:ellipsize="end"
+        android:id="@+id/pic_fileName"
+        android:textSize="15px"
+        android:layout_marginTop="13px"
+        android:textColor="#cccccc"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

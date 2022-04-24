@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activate"
+        android:title="设备激活"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="关于设备"/>
+
+</menu>

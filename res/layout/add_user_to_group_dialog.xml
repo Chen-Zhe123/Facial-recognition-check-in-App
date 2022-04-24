@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="#CDC5C5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"/>
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/group_search_bar"
+                            android:layout_width="296dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="5dp"
+                            android:hint="请输入姓名或学号搜索要添加的人脸"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:textSize="16sp" />
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/cancel"
+                            android:id="@+id/group_clean_EditText"
+                            android:layout_gravity="right|center_vertical"
+                            android:paddingBottom="5dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/group_search"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/search"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/select_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:text="选择"
+                    android:textSize="18sp"
+                    android:paddingEnd="15dp" />
+                <TextView
+                    android:id="@+id/cancel_select_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:text="取消"
+                    android:textSize="18sp"
+                    android:paddingEnd="15dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/group_face_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/group_empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="该组为空，请点击下方按钮往组中添加人脸"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/add_face_bottom_option"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="#B32BA9ED"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/sure_add_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp" />
+            <TextView
+                android:id="@+id/cancel_add_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textSize="15sp"/>
+            <CheckBox
+                android:id="@+id/select_all_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="18dp"
+                android:paddingEnd="18dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dismiss_add_face_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

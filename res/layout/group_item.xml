@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingStart="15dp">
+
+    <RelativeLayout
+        android:id="@+id/bbb"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="组名(大数据2001班）"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/number_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人数:"
+            android:layout_toLeftOf="@id/number_2"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/number_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_toLeftOf="@id/priority_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/priority_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为默认"
+            android:layout_toLeftOf="@id/is_priority"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/is_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:button="@drawable/radio_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_toLeftOf="@+id/scan_group"
+            android:layout_marginRight="15dp" />
+
+        <ImageView
+            android:id="@+id/scan_group"
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:src="@drawable/scan_group"
+            android:layout_toLeftOf="@+id/modify_group"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/modify_group"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/modify_group"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/group_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="组描述（Java课签到）"
+        android:textSize="12sp"
+        android:layout_below="@+id/bbb"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

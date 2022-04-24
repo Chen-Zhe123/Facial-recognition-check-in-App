@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#cccccc"
+        android:textSize="21px"
+        android:gravity="center_vertical"
+        android:text="@string/settings_picRegTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#363a43"
+        android:layout_height="2px"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="25px"
+        android:layout_height="0dp">
+
+        <GridView
+            android:scrollbars="none"
+            android:numColumns="4"
+            android:verticalSpacing="13px"
+            android:id="@+id/picRegListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:textColor="#cccccc"
+            android:textSize="21px"
+            android:id="@+id/picRegEmptyView"
+            android:layout_centerInParent="true"
+            android:text="@string/find_no_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
